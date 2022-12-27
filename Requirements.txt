@@ -1,0 +1,19 @@
+**** I will write a detailed discription further till then please consider this --->
+First of all You need to clone this repository or simply download the files.
+
+        Step 1 > download &Install Java JRE and Java JDK form 
+            https://www.oracle.com/in/java/technologies/javase/javase8-archive-downloads.html
+        and download windows x64 or windows x86 according to your Os confirguration
+        
+After That You have two scenario:
+
+    scenario 1.{You need to Run just .exe(windows Executable) file on your computer ):
+            Step 2.> You have to just double click on the downloaded file and Ide will be running and you are good to go
+
+    scenario 2. { You have to Run .py(python) file  on your computer }:
+        Step 2.> You need to installed  python 3 on your computer also if not please install it from 
+            https://www.python.org/downloads/
+        Step 3.>now open command prompt and reloacate to the location where file is download 
+        Step 4.> write on terminal(command prompt) -->python Basefile.py
+        and then you are good to go.
+    
