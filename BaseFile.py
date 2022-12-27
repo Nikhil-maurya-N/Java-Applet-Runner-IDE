@@ -11,7 +11,7 @@ class note:
         self.root=Tk()
         self.root.geometry("1366x768")
         self.name = "Untitled"
-        self.root.title(f"{self.name} - Notepad By Nikhil")
+        self.root.title(f"{self.name} - JAVA APPLET RUNNER by Nikhil")
 
         self.tx = Text(self.root, undo=True, font=("Helvetica", 20))
         self.tx.pack(expand=True, fill=BOTH)
@@ -220,7 +220,7 @@ class note:
 
     # this function is for help -> about us menu
     def help(self):
-        a = tmsg.showinfo("About Notepad", "Hi There I am Nikhil Maurya I am currently purssuing BCA from Dr. Virendra Swarup institute of computer studies this project is made at the time of June start Date = 6/5/2022.The finishing date is 9/6/2022. This is a simulation progrram of Microsoft't Windows Buit in Basic text editor called \"Notepad\".I got a little help and inspiration from online mentor Named as \'Code With Harry.\'\n\n\n\tThank you for using it. \n\nfor detailed information open this pdf")
+        a = tmsg.showinfo("About Notepad", "Hi There I am Nikhil Maurya I am currently purssuing BCA from Dr. Virendra Swarup institute of computer studies this project is a extened version of Notepad by Nikhil start Date = 25/12/2022.The finishing date is 28/12/2022. This is a simulation progrram of Microsoft't Windows Buit in Basic text editor called \"Notepad\" and an added feature of running java applet.\tHow it works??.....read discription on repository\'\n\n\n\tThank you for using it. \n\n")
 
     # this funtion is for file -> exit menu
 
