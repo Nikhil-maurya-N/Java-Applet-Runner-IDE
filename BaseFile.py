@@ -147,8 +147,7 @@ class note:
 
     def runJava(self):
         print("Running applet......")
-        if self.name == "Untitled":
-            self.saveFile()
+        self.saveFile()
             # print(cmd1+"\n"+cmd2)
         # print(self.name+"in block1")
         # print(os.path.baseself.name(file))
