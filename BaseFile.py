@@ -55,7 +55,10 @@ class note:
 
         m5 = Menu(mainmenu, tearoff=0)
         mainmenu.add_cascade(label="Run java", font=("BOLD", 15), menu=m5)
-        m5.add_command(label="run", command=self.runJava)
+        m5.add_command(label="Normal java", command=self.runJava)
+        m5.add_command(label="Applet", command=self.runJavaApplet)
+        m5.add_command(label="this is for future", command=None)
+        m5.add_command(label="this is for future", command=None)
         # configering the mainmenu
         self.root.config(menu=mainmenu)
 
@@ -144,18 +147,26 @@ class note:
             f.close()
             tmsg.showinfo("file appended","Your file is saved again")
 
-
-    def runJava(self):
+    def runJavaApplet(self):
         print("Running applet......")
-        self.saveFile()
-            # print(cmd1+"\n"+cmd2)
-        # print(self.name+"in block1")
-        # print(os.path.baseself.name(file))
-        os.system(f'javac {os.path.basename(self.file)}')
-        os.system(f'appletviewer {os.path.basename(self.file)}')
-
+        self.runjavaBase()
+        os.system(f'appletviewer {self.name}')
         print("Exited applet")
 
+
+    def runJava(self):
+        tmsg.showinfo('now in underdevlopemnet','please do  not consider this I am working on that feature ')
+        print("running Normal java.....")
+        self.runJavaBase()
+        classFile=self.name.replace(".java","")
+        # print(classFile)
+        os.system(f'java {classFile}')
+
+
+    def runJavaBase(self):
+        self.saveFile()
+        # print(self.name)
+        os.system(f' javac {self.name}')
     # this function is for file -> open file menu
 
 
